@@ -1,0 +1,73 @@
+*{
+    color: #404040;
+    font-family: Georgia, serif;
+}
+.backgroundImg{
+    position: absolute;
+    background-image: url("../../res/images/silverware.jpg");
+    background-repeat: repeat;
+    background-size: 400px 400px;
+    z-index: -10000;
+    opacity: 0.2;
+    width: 100%;
+    height: 2000px;
+}
+.title{
+    font: 22pt bold ; 
+}
+.heading{
+    font-family: Lucida Sans Unicode, Helvetica, Arial;
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font: 18 normal;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.lineHeightSmall{
+    line-height: 1px;
+}
+ul{
+    list-style-image: url('../../res/images/pie_bullet2.jpg');
+    background-color: transparent;
+}
+ol{
+    background-color: transparent;
+}
+li{
+    background-color: transparent;
+}
+.qoute{
+    background-color: #FFFFA8;
+}
+img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+#arrow{
+    animation: backandforth 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backandforth {
+    0%{ transform: translateX(5px);}
+    25%{ transform: translateX(5px);}
+    50%{ transform: translateX(0px);}
+    75%{ transform: translateX(-5px);}
+    100%{ transform: translateX(-5px);}
+}
